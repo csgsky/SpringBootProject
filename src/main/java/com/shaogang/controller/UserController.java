@@ -1,7 +1,6 @@
 package com.shaogang.controller;
 
 import com.shaogang.bean.ConfigBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,12 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by allen on 17/11/28.
  */
 @RestController
+@RequestMapping("/user")
 public class UserController {
-    @Autowired
-    ConfigBean configBean;
 
-    @RequestMapping("/")
-    public String hexo(){
-        return configBean.getName();
+
+    @RequestMapping("/getuser")
+    public ConfigBean hexo(){
+        ConfigBean configBean = new ConfigBean();
+        configBean.setName("小明");
+        configBean.setWant("新年快乐！");
+        return configBean;
     }
 }
