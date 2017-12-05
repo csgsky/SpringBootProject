@@ -29,11 +29,10 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("爱淘券子接口文档")
+                .title("接口文档")
                 .description("")
                 .termsOfServiceUrl("http://www.baidu.com")
-                .contact("陈少罡")
-                .version("1.0")
+                .version("")
                 .build();
     }
 

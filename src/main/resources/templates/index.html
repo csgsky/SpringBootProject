@@ -1,27 +1,11 @@
 
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>learn Resources</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Spring Security入门</title>
 </head>
 <body>
-
-<div style="text-align: center;margin:0 auto;width: 1000px; ">
-    <h1>java learning</h1>
-    <table width="100%" border="1" cellspacing="1" cellpadding="0">
-        <tr>
-            <td>作者</td>
-            <td>教程名称</td>
-            <td>地址</td>
-        </tr>
-        <!--/*@thymesVar id="learnList" type=""*/-->
-        <tr th:each="learn : ${learnList}">
-            <td th:text="${learn.author}">嘟嘟MD</td>
-            <td th:text="${learn.title}">SPringBoot干货系列</td>
-            <td><a th:href="${learn.url}" target="_blank">点我</a></td>
-        </tr>
-    </table>
-</div>
+<h1>欢迎使用Spring Security!</h1>
+<p>点击 <a th:href="@{/hello}">这里</a> 打个招呼吧</p>
 </body>
 </html>
