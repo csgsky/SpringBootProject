@@ -29,7 +29,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -69,10 +69,16 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.2.2</version>
 		</dependency>
-		<!--Spring Security 安全-->
+		<!-- MYSQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.35</version>
+		</dependency>
+		<!-- Spring Boot JDBC -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 	</dependencies>
 
